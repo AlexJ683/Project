@@ -1,0 +1,17 @@
+name: Setup Frontend
+
+on:
+  workflow_dispatch:  # Allows manual trigger from the Actions tab
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+    
+    - name: Install frontend dependencies
+      run: |
+            pip install -r frontend/requirements.txt
+    
+    - name: Run frontend (Streamlit)
+      run: |
+            streamlit run frontend/app_frontend.py
