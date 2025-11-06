@@ -10,7 +10,7 @@ jobs:
     
     - name: Install frontend dependencies
       run: |
-            pip install -r frontend/requirements.txt
+            pip install -r frontend/Requirements.txt
     
     - name: Run frontend (Streamlit)
       run: |
